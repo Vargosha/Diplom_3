@@ -1,0 +1,1 @@
+{"uuid": "c7add303-7b2a-4fc2-a438-d1410060fe00", "children": ["cf93000d-1110-479f-9abd-eb7e8a4e7d53"], "befores": [{"name": "unregistered_user", "status": "passed", "steps": [{"name": "Ждем загрузки главной страницы", "status": "passed", "start": 1754737682628, "stop": 1754737682669}], "start": 1754737674479, "stop": 1754737682669}], "start": 1754737674479, "stop": 1754737682891}
