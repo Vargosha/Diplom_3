@@ -1,21 +1,11 @@
 import pytest
-from selenium import webdriver
 from helpers.urls import LOGIN_PAGE_URL, HOME_PAGE_URL, ORDER_FEED_PAGE_URL
 from helpers.data import LOGIN_DATA
 from pages.home_page import HomePageMethods
 from pages.login_page import LoginPageMethods
 from pages.order_feed_page import OrderFeedPageMethods
+from helpers.driver import WebDriverFactory
 
-
-class WebDriverFactory:
-    @staticmethod
-    def get_webdriver(browser_name):
-        if browser_name == "firefox":
-            return webdriver.Firefox()
-        elif browser_name == "chrome":
-            return webdriver.Chrome()
-        else:
-            raise ValueError(f"Unsupported browser: {browser_name}")
 
 def pytest_addoption(parser):
     parser.addoption(
